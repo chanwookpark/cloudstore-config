@@ -1,5 +1,6 @@
 info:
   component: Config Server
+
 spring:
   application:
     name: configServer
@@ -9,12 +10,6 @@ spring:
         git:
           uri: https://github.com/chanwookpark/cloudstore-config-repo
 
-server:
-  port: 8810
 endpoints:
   restart:
     enabled: true
-logging:
-  levels:
-    org.springframework.boot.env.PropertySourcesLoader: TRACE
-    org.springframework.web: DEBUG
